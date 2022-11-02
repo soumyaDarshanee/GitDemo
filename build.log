@@ -1,0 +1,52 @@
+[INFO] Scanning for projects...
+[ERROR] Internal error: java.lang.NumberFormatException: For input string: ">4" -> [Help 1]
+org.apache.maven.InternalErrorException: Internal error: java.lang.NumberFormatException: For input string: ">4"
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:120)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:960)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:293)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:196)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.NumberFormatException: For input string: ">4"
+    at java.lang.NumberFormatException.forInputString (NumberFormatException.java:65)
+    at java.lang.Long.parseLong (Long.java:692)
+    at java.lang.Long.valueOf (Long.java:1144)
+    at org.apache.maven.model.validation.DefaultModelValidator.compareModelVersions (DefaultModelValidator.java:1174)
+    at org.apache.maven.model.validation.DefaultModelValidator.validateModelVersion (DefaultModelValidator.java:1130)
+    at org.apache.maven.model.validation.DefaultModelValidator.validateRawModel (DefaultModelValidator.java:137)
+    at org.apache.maven.model.building.DefaultModelBuilder.readModel (DefaultModelBuilder.java:693)
+    at org.apache.maven.model.building.DefaultModelBuilder.build (DefaultModelBuilder.java:303)
+    at org.apache.maven.model.building.DefaultModelBuilder.build (DefaultModelBuilder.java:267)
+    at org.apache.maven.project.DefaultProjectBuilder.build (DefaultProjectBuilder.java:448)
+    at org.apache.maven.project.DefaultProjectBuilder.build (DefaultProjectBuilder.java:414)
+    at org.apache.maven.project.DefaultProjectBuilder.build (DefaultProjectBuilder.java:377)
+    at org.apache.maven.graph.DefaultGraphBuilder.collectProjects (DefaultGraphBuilder.java:414)
+    at org.apache.maven.graph.DefaultGraphBuilder.getProjectsForMavenReactor (DefaultGraphBuilder.java:405)
+    at org.apache.maven.graph.DefaultGraphBuilder.build (DefaultGraphBuilder.java:82)
+    at org.apache.maven.DefaultMaven.buildGraph (DefaultMaven.java:532)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:219)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:960)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:293)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:196)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/InternalErrorException

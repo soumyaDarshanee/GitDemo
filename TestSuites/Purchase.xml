@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--[suite parallel = "tests" name="Suite"] this indicates test cases will run parallely-->
+<suite name="Suite">
+	<!--change thread count to  modify number of test instance to run simultaneously-->
+	<groups>
+		<run>
+		<!--runs test cases that belong to below group-->
+			<include name="purchase" />
+		</run>
+	</groups>
+	 <listeners>
+		<listener class-name="rahulshettyacademy.TestComponents.Listeners" />
+	</listeners>
+	
+	<test thread-count="5" name="ErrorValidationTest">
+		<classes>
+			<class name="rahulshettyacademy.Test.ErrorValidations" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="SubmitOrderTest">
+		<classes>
+			<class name="rahulshettyacademy.Test.SubmitOrderTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+</suite> <!-- Suite -->
