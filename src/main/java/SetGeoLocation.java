@@ -34,6 +34,9 @@ public class SetGeoLocation {
 			System.out.println(driver.findElement(By.id("address")).getText());
 			
 			System.out.println("gitdemo : its git hub code change testing ");
+			
+			System.out.println("gitstuff : its git hub code change testing ");
+			System.out.println("gitstuff : its git hub code change testing ");
 			/*
 			 * driver.get("https://google.com/"); Thread.sleep(3000);
 			 * driver.findElement(By.name("q")).sendKeys("netflix",Keys.ENTER);
